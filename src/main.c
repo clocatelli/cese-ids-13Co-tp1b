@@ -34,6 +34,14 @@
 
 /*=====[Implementations of private functions]================================*/
 
+/*!
+ * @fn int main(int argc, char *argv[])
+ * @brief Programa princial
+ * @param  argc     Número de argumentos que se han introducido. 
+ * @param  argv     Array de punteros a caracteres.
+ * @return          Retorna cero si finaliza normalmente. 
+ * 
+ */
 int main(int argc, char *argv[]) {
     char cadena[2048];
 

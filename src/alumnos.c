@@ -25,23 +25,27 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+/** Estructura con los datos de Esteban Volenini */
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
 
+/** Estructura con los datos de Cristian Locatelli */
 static const struct alumno_s CRISTIAN_LOCATELLI = {
     .apellidos = "LOCATELLI",
     .nombres = "Cristian Angel",
     .documento = "33.278.404",
 };
 
+/** Vector de alumnos listados */
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
     &CRISTIAN_LOCATELLI,
 };
 
+/** Cálculo de la cantidad de alumnos en el vector ALUMNOS */
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Definitions of private global variables]=============================*/

@@ -29,6 +29,11 @@ extern "C" {
 
 /*=====[Definitions of public data types]====================================*/
 
+/**
+ *  @struct alumno_s alumnos.h inc/alumnos.h
+ *  @brief Apellido, nombre y documento del alumno.
+ *
+ */
 typedef struct alumno_s {
     char apellidos[30];
     char nombres[30];
@@ -39,8 +44,25 @@ typedef struct alumno_s {
 
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
+/*! 
+ *  @fn bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno)
+ *  @brief: Imprime los datos de un alumno.
+ *  @param cadena: La cadena a serializar.
+ *  @param espacio: El tamaño de la cadena a serializar.
+ *  @param alumno: El alumno a serializar.
+ *  @return resultado: El resultado booleano. True: exitoso, False: fallo.
+ * 
+ */
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
 
+/*! 
+ *  @fn bool SerializarAlumnos(char * cadena, size_t espacio)
+ *  @brief: Imprime los datos de los alumnos
+ *  @param cadena: La cadena a serializar.
+ *  @param espacio: El tamaño de la cadena a serializar.
+ *  @return resultado: El resultado booleano. True: exitoso, False: fallo.
+ * 
+ */
 bool SerializarAlumnos(char * cadena, size_t espacio);
 
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/
